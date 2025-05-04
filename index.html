@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unblocked Instagram - Unblock and Unban Instagram Accounts and View Posts Anonymously</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .star {
+      position: absolute;
+      background: black;
+      border-radius: 50%;
+      opacity: 0.3;
+      animation: move 10s linear infinite;
+    }
+
+    @keyframes move {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
+    }
+
+    nav {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+    }
+
+    .brand:hover {
+      text-decoration: underline;
+    }
+
+    .menu-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav button {
+      background: transparent;
+      border: 2px solid black;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    nav button:hover {
+      background: black;
+      color: white;
+    }
+
+    .center-button {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+    }
+
+    .center-button button {
+      background: white;
+      border: 3px solid black;
+      color: black;
+      padding: 20px 40px;
+      font-size: 20px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+    }
+
+    .center-button button:hover {
+      background: black;
+      color: white;
+    }
+
+    .share-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .share-buttons button {
+      background: transparent;
+      border: 2px solid black;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .share-buttons button:hover {
+      background: black;
+      color: white;
+    }
+
+    .suggestions {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .suggestions a {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .suggestions a:hover {
+      color: gray;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+
+  <nav>
+    <a href="/" class="brand">Unblocked Instagram</a>
+    <div class="menu-buttons">
+	  <button onclick="window.location.href='https://tally.so/r/nGg6xk'">Add an creator?</button>
+    </div>
+  </nav>
+
+  <div class="center-button">
+    <button onclick="window.location.href='https://t.me/+b1LZ9cjCwhAzMmY1'">Open on Telegram</button>
+
+    <div class="share-buttons">
+      <button onclick="share('whatsapp')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+      <button onclick="share('x')"><i class="fab fa-x-twitter"></i> X</button>
+      <button onclick="share('telegram')"><i class="fab fa-telegram"></i> Telegram</button>
+      <button onclick="copyUrl()"><i class="fas fa-copy"></i> Copy</button>
+    </div>
+
+    <div class="suggestions">
+      <a href="https://tally.so/r/nGg6xk">Suggestions?</a>
+    </div>
+  </div>
+
+  <script>
+    const starsContainer = document.getElementById('stars');
+
+    for (let i = 0; i < 100; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.width = `${Math.random() * 3 + 1}px`;
+      star.style.height = star.style.width;
+      star.style.left = `${Math.random() * 100}%`;
+      star.style.top = `${Math.random() * 100}%`;
+      star.style.animationDuration = `${Math.random() * 10 + 5}s`;
+      starsContainer.appendChild(star);
+    }
+
+    function copyUrl() {
+      const url = 'https://unblockedinstagram.vercel.app';
+      navigator.clipboard.writeText(url).then(() => {
+        alert('URL copied!');
+      });
+    }
+
+    function share(platform) {
+      const url = encodeURIComponent('https://unblockedinstagram.vercel.app');
+      let shareUrl = '';
+
+      if (platform === 'whatsapp') {
+        shareUrl = `https://wa.me/?text=${url}`;
+      } else if (platform === 'x') {
+        shareUrl = `https://twitter.com/intent/tweet?url=${url}`;
+      } else if (platform === 'telegram') {
+        shareUrl = `https://t.me/share/url?url=${url}`;
+      }
+
+      window.open(shareUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
