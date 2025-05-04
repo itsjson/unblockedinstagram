@@ -160,7 +160,7 @@
   </nav>
 
   <div class="center-button">
-    <button onclick="window.location.href='https://t.me/+b1LZ9cjCwhAzMmY1'">Open on Telegram</button>
+    <button style="border: 3px solid; border-radius: 20px; border-image: linear-gradient(45deg, red, blue, green, orange) 1; animation: borderAnimation 5s infinite;" onclick="window.location.href='https://t.me/+b1LZ9cjCwhAzMmY1'">Open on Telegram</button>
 
     <div class="share-buttons">
       <button onclick="share('whatsapp')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
@@ -189,14 +189,14 @@
     }
 
     function copyUrl() {
-      const url = 'https://unblockedinstagram.vercel.app';
+      const url = 'https://unblocked-instagram.vercel.app';
       navigator.clipboard.writeText(url).then(() => {
         alert('URL copied!');
       });
     }
 
     function share(platform) {
-      const url = encodeURIComponent('https://unblockedinstagram.vercel.app');
+      const url = encodeURIComponent('https://unblocked-instagram.vercel.app');
       let shareUrl = '';
 
       if (platform === 'whatsapp') {
